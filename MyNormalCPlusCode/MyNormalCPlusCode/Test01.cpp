@@ -1,6 +1,6 @@
 #include<windows.h>
 #include<iostream>
-DWORD WINAPI ThreadFun(
+DWORD WINAPI ThreadFun1(
 	LPVOID lpThreadParameter
 	);
 //DWORD WINAPI SuspendThread(HANDLE hHandle);
@@ -8,12 +8,13 @@ DWORD WINAPI ThreadFun(
 //DWORD CloseHandle(HANDLE hObject);
 //VOID WINAPI Sleep(DWORD dwMilliseconds);
 //DWORD WINAPI ResumeThread(	_In_ HANDLE hThread);
-int main()
+//DWORD WINAPI WaitForSingleObject(	_In_ HANDLE hHandle,	_In_ DWORD dwMilliseconds);
+int main1()
 {
 	DWORD threadID= 0;
 	HANDLE Threadhandle= CreateThread(NULL,//如果为NULL为默认安全性
 		0,//线程栈的大小
-		ThreadFun,//线程处理函数
+		ThreadFun1,//线程处理函数
 		(void*)"hello",//向线程函数传入参数
 	0,//创建后立即运行
 	&threadID);
@@ -40,7 +41,7 @@ int main()
 
 	return 0;
 }
-DWORD WINAPI ThreadFun(	LPVOID lpThreadParameter) 
+DWORD WINAPI ThreadFun1(	LPVOID lpThreadParameter) 
 {
 	char*str = (char*)lpThreadParameter;
 	while (true)
