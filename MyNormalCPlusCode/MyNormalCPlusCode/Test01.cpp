@@ -3,7 +3,11 @@
 DWORD WINAPI ThreadFun(
 	LPVOID lpThreadParameter
 	);
+//DWORD WINAPI SuspendThread(HANDLE hHandle);
 //DWORD WINAPI GetCurrentThreadid();//返回当前线程ID
+//DWORD CloseHandle(HANDLE hObject);
+//VOID WINAPI Sleep(DWORD dwMilliseconds);
+//DWORD WINAPI ResumeThread(	_In_ HANDLE hThread);
 int main()
 {
 	DWORD threadID= 0;
@@ -23,13 +27,28 @@ int main()
 		std::cout << "线程创建ID" << threadID << std::endl;
 	}
 	std::cout << "主线程id" << GetCurrentThreadId() << std::endl;
-	getchar();
+	std::cout << "子线程id" << threadID << std::endl;
+	//bool a = CloseHandle(Threadhandle);
+	//std::cout<<a;
+	while (true)
+	{
+		getchar();
+		SuspendThread(Threadhandle);
+		getchar();
+		ResumeThread(Threadhandle);
+	}
+
 	return 0;
 }
 DWORD WINAPI ThreadFun(	LPVOID lpThreadParameter) 
 {
 	char*str = (char*)lpThreadParameter;
-	std::cout << "线程处理函数"<<str << std::endl;
-	std::cout << "子线程id" << GetCurrentThreadId() << std::endl;
+	while (true)
+	{
+		std::cout << "线程处理函数" << str << std::endl;
+		std::cout << "子线程id" << GetCurrentThreadId() << std::endl;
+Sleep(1000);
+	}
+	
 	return 0;
 }
