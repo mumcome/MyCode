@@ -6,7 +6,7 @@ DWORD WINAPI ThreadFun3(LPVOID lpThreadParament);
 //TerminateThread();
 //BOOL WINAPI GetExitCodeThread( 	_In_ HANDLE hThread,	_Out_ LPDWORD lpExitCode);
 //WaitForMultipleObjects( _In_ DWORD nCount, _In_reads_(nCount) CONST HANDLE* lpHandles, _In_ BOOL bWaitAll, _In_ DWORD dwMilliseconds )
-int main()
+int main3()
 {
 	std::cout << "主线程开始" << std::endl;
 	DWORD CreatedMainThreadID = 0;
@@ -31,16 +31,16 @@ DWORD WINAPI ThreadFun3(LPVOID lpThreadParament)
 	while (++n < 6)
 	{
 		
-		if (strcmp("Thread01", (char *)lpThreadParament))
+		if (strcmp("Thread01", (char *)lpThreadParament)==0)
 		{std::cout << n << (char *)lpThreadParament << std::endl;
 			Sleep(1000);
 		}
-		else if (strcmp("Thread02", (char *)lpThreadParament))
+		else if (strcmp("Thread02", (char *)lpThreadParament)==0)
 		{
 			std::cout << n << (char *)lpThreadParament << std::endl;
  			Sleep(6000);
 		}
-		else  if (strcmp("Thread03", (char *)lpThreadParament))
+		else  if (strcmp("Thread03", (char *)lpThreadParament)==0)
 		{
 			std::cout << n << (char *)lpThreadParament << std::endl;
 		 	 Sleep(9000);
@@ -51,6 +51,9 @@ DWORD WINAPI ThreadFun3(LPVOID lpThreadParament)
 		//  		{
 		//  			ExitThread(666);
 		//  		}
+
+
+
 	}
 	return 0;
 }
