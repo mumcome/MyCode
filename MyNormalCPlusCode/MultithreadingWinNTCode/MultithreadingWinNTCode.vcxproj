@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Test01.cpp" />
-    <ClCompile Include="Test02.cpp" />
-    <ClCompile Include="test03.cpp" />
-    <ClCompile Include="Test04.cpp" />
+    <ClCompile Include="Test01_ThreadBase_Create.cpp" />
+    <ClCompile Include="Test02_ThreadBase_ExitAndWait.cpp" />
+    <ClCompile Include="Test03_ThreadBase_ExitAndWait.cpp" />
+    <ClCompile Include="Test04_SafeProcessThread.cpp" />
     <ClCompile Include="Test05_SimulateTrainTicketSale.cpp" />
+    <ClCompile Include="Test06_CriticalSection.cpp" />
+    <ClCompile Include="Test07_DeadLock.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

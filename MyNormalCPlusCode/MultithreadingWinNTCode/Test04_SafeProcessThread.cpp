@@ -7,7 +7,7 @@ void  ThreadFun4(
 	void* lpThreadParameter
 );
 
-int main()
+int main4()
 {
 	std::cout << "主线程开始" << std::endl;
 //	DWORD threadID = 0;
