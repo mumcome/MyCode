@@ -26,6 +26,9 @@
     <ClCompile Include="Test05_SimulateTrainTicketSale.cpp" />
     <ClCompile Include="Test06_CriticalSection.cpp" />
     <ClCompile Include="Test07_DeadLock.cpp" />
+    <ClCompile Include="Test08_Semaphore.cpp" />
+    <ClCompile Include="Test09_Mutex.cpp" />
+    <ClCompile Include="Test10_Event.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

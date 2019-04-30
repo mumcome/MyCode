@@ -8,7 +8,7 @@ void SellThread4(void* Param);
 static int ticket{ 100 };
 
 
-int main()
+int main6()
 {
 	//初始化临界区资源
 	InitializeCriticalSection(&Section);

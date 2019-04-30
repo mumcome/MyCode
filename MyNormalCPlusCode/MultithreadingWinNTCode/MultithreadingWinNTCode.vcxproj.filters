@@ -36,5 +36,14 @@
     <ClCompile Include="Test01_ThreadBase_Create.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Test08_Semaphore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Test09_Mutex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Test10_Event.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
