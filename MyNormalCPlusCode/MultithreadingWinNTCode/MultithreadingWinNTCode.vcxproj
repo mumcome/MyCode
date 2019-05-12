@@ -28,7 +28,8 @@
     <ClCompile Include="Test07_DeadLock.cpp" />
     <ClCompile Include="Test08_Semaphore.cpp" />
     <ClCompile Include="Test09_Mutex.cpp" />
-    <ClCompile Include="Test10_Event.cpp" />
+    <ClCompile Include="Test10_Event_ProdAndCus.cpp" />
+    <ClCompile Include="Test10_Event_Test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

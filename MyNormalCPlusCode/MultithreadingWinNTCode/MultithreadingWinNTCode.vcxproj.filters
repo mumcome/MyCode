@@ -42,7 +42,10 @@
     <ClCompile Include="Test09_Mutex.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Test10_Event.cpp">
+    <ClCompile Include="Test10_Event_Test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Test10_Event_ProdAndCus.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
